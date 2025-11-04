@@ -1,4 +1,4 @@
-# Description du détecteur de présence de train miniature
+<img width="527" height="358" alt="image" src="https://github.com/user-attachments/assets/c2552ae2-fc68-499d-8912-04e797ceaf17" /># Description du détecteur de présence de train miniature
 
 <img width="702" height="407" alt="image" src="https://github.com/user-attachments/assets/97ae18c7-4ffb-4f8a-aa9e-2c171a21d9dc" />
 
@@ -43,3 +43,58 @@ La sortie du comparateur peut ensuite activer une LED, un relais ou envoyer un s
 Le montage fonctionne avec +5V et -5V.
 Le -5V est généré automatiquement par un convertisseur DC-DC à pompe de charge (MAX1044).
 → Cela permet l’utilisation correcte des amplificateurs opérationnels.
+
+
+# Description du routage de la carte électronique
+
+Le routage de la carte électronique a été réalisé sur deux couches de cuivre : la couche F.Cu (face avant) et la couche B.Cu (face arrière). Cela permet d’optimiser le passage des pistes, de réduire les interconnexions et d’obtenir une implantation compacte.
+
+## 1. Routage sur la couche F.Cu (Face Avant)
+
+<img width="527" height="358" alt="image" src="https://github.com/user-attachments/assets/357ec3aa-e4bf-474a-8509-2646c5058862" />
+
+L’image de la couche F.Cu montre principalement les pistes situées sur la face supérieure de la carte.
+Sur cette face, on retrouve :
+
+Les liaisons les plus courtes entre les composants sensibles, afin de réduire le bruit et les perturbations.
+
+La majorité des connexions associées aux signaux analogiques, notamment celles liées aux amplificateurs opérationnels et aux étages de détection.
+
+Le placement stratégique des condensateurs de découplage près des circuits intégrés pour une meilleure stabilité de l’alimentation.
+
+Cette organisation permet de garantir une transmission du signal propre et stable.
+
+## 2. Routage sur la couche B.Cu (Face Arrière)
+
+<img width="509" height="356" alt="image" src="https://github.com/user-attachments/assets/452ce872-dc02-4fa4-a9fc-87d20a22f4ff" />
+
+La couche B.Cu représente le routage sur la face inférieure.
+Cette couche est principalement utilisée pour :
+
+Les retours à la masse (GND), permettant de créer un plan de masse continu.
+
+Certaines pistes d’alimentation +5V et −5V provenant du convertisseur DC-DC.
+
+Le passage de pistes complémentaires lorsque la face avant ne permet pas à elle seule les interconnexions.
+
+L’utilisation des deux couches facilite une séparation claire entre signaux sensibles et alimentation, ce qui améliore les performances globales du circuit.
+
+## 3. Visualisation 3D de la carte électronique
+
+<img width="500" height="412" alt="image" src="https://github.com/user-attachments/assets/d8f9fdaa-046b-44b8-ae38-0f36e373177b" />
+
+<img width="547" height="353" alt="image" src="https://github.com/user-attachments/assets/03bb677e-fb3f-4717-915c-56914fb36474" />
+
+
+La troisième image représente la vue 3D de la carte électronique.
+Cette modélisation permet :
+
+De visualiser l’implantation réelle des composants (résistances, condensateurs, circuits intégrés, connecteurs, etc.),
+
+De vérifier les dimensions et l’encombrement physique de la carte,
+
+De s’assurer qu’aucune collision ou superposition de composants n’existe,
+
+De préparer plus facilement l’assemblage et la fabrication.
+
+La vue 3D constitue une étape essentielle avant l’envoi en fabrication, car elle permet une validation visuelle complète du design.
