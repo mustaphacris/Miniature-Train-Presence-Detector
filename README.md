@@ -1,5 +1,7 @@
 # Description du détecteur de présence de train miniature
 
+<img width="523" height="320" alt="image" src="https://github.com/user-attachments/assets/eac569fb-e09d-4a25-9cd9-c22215419af7" />
+
 
 Le schéma électronique présenté permet de détecter la présence d’un train miniature sur une portion de voie alimentée en courant continu. Le principe repose sur la mesure du courant consommé par la locomotive ou par une résistance de détection placée sur les essieux du train. Lorsque le train est présent, un faible courant circule dans la voie, ce qui permet au circuit de le détecter et de générer un signal exploitable (par exemple pour commander un signal lumineux, une automatisation ou un système d’arrêt).
 
