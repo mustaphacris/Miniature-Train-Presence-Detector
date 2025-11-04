@@ -1,4 +1,4 @@
-<img width="527" height="358" alt="image" src="https://github.com/user-attachments/assets/c2552ae2-fc68-499d-8912-04e797ceaf17" /># Description du détecteur de présence de train miniature
+# Description du détecteur de présence de train miniature
 
 <img width="702" height="407" alt="image" src="https://github.com/user-attachments/assets/97ae18c7-4ffb-4f8a-aa9e-2c171a21d9dc" />
 
